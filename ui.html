@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 50px auto;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      border-radius: 15px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #007bff;
+      margin-bottom: 30px;
+    }
+
+    .flex-row {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    input[type="file"] {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      resize: vertical;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+    }
+
+    #file-submit-btn {
+      padding: 15px;
+      border: none;
+      border-radius: 8px;
+      background-color: #007bff;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #file-submit-btn:hover {
+      background-color: #0056b3;
+    }
+
+    #folder-submit-btn {
+      padding: 15px;
+      border: none;
+      border-radius: 8px;
+      background-color: #02ccfe;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #folder-submit-btn:hover {
+      background-color: #add8e6;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Synthetic License Plate Image Crop</h2>
+    <!-- <form> -->
+    <!-- <div class="flex-row">
+      <label for="file-select">Select a file or folder to crop:</label>
+      <input type="file" id="file-select" name="file-select" />
+    </div> -->
+    <div class="flex-row">
+      <button id="file-submit-btn">Select File</button>
+    </div>
+    <div class="flex-row">
+      <button id="folder-submit-btn">Select Folder</button>
+    </div>
+    <!-- </form> -->
+  </div>
+</body>
+<script src="./renderer.js"></script>
+
+</html>
