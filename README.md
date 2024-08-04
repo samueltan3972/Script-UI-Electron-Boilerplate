@@ -39,7 +39,7 @@ yarn && yarn dist -w
 ### Reference
 
 * [Build windows dist from linux](https://stackoverflow.com/questions/58946482/how-to-build-electron-app-for-windows-in-ubuntu-using-electron-builder)
-
+* [Awesome Electron Resources](https://github.com/sindresorhus/awesome-electron#boilerplates)
 
 ## Todo
 1. Explore [pyinstaller](https://pyinstaller.org/en/stable/) to include python binaries. [Link to medium article](https://medium.com/@abulka/electron-python-4e8c807bfa5e).
@@ -48,4 +48,4 @@ yarn && yarn dist -w
 4. Explore [Secure Electron Template](https://github.com/reZach/secure-electron-template).
 5. Complete [tutorial](https://www.electronjs.org/docs/latest/tutorial/tutorial-publishing-updating) for publishing and updating.
 6. Read the [electron docs](https://www.electronjs.org/docs/latest/tutorial/process-model).
-7. Awesome Electron [Resources](https://github.com/sindresorhus/awesome-electron#boilerplates)
+7. Make building and packaging config better by adding logo, name, etc option.
