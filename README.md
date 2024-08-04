@@ -7,13 +7,17 @@ Boilerplate to build GUI desktop app for python/etc script.
 1. Install NodeJS
 2. Install python3
 
+### Development
 ```bash
-# development
+
 git clone ...
 cd <bla>
 npm i
 npm run start
+```
 
+### Build & packaging
+```bash
 # build
 # Method 1 (npm)
 npm run make
