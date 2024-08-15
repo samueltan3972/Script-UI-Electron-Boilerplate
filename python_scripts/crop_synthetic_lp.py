@@ -42,6 +42,7 @@ if __name__ == "__main__":
     parser.add_argument("--file", "-f", required=True, help="Enter the filename or folder of the image")
 
     args = parser.parse_args()
+    allowed_file_type = ["jpg", "jpeg", "png"]
 
     if os.path.isfile(args.file):
         read_and_crop(args.file)
@@ -52,7 +53,7 @@ if __name__ == "__main__":
             args.file = args.file + "/"
 
         for filename in os.listdir(args.file):
-            if filename.split(".")[-1] == "jpg":
+            if filename.split(".")[-1] in allowed_file_type:
                 read_and_crop(args.file + filename)
 
     print("Done")
